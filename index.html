@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 9-2 Užduotis</title>
+    <style>
+        body {
+            background: orangered;
+            padding: 20px;
+            height: 500px;
+            width: 880px;
+        }
+
+        button{
+            position: relative;
+            padding: 20px;
+            border: 2px dotted green;
+            color: green;
+            font-size: 30px;
+            background: rebeccapurple;
+            transition: .5s;
+        }
+
+        button:hover{
+            font-weight: bold;
+            color: red;
+            background: rgba(102, 51, 153, 0.459);
+        }
+        .jump {
+            position: relative;
+            left: 780px;
+            top: 800px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="jumps()" class="jump" id="jumper">Nespausk!</button>
+    <script>
+        function jumps() {
+        var element = document.getElementById("jumper");
+        element.classList.toggle("jump");
+}
+    </script>
+</body>
+</html>
